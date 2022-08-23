@@ -18,3 +18,9 @@ function isMultiple(arr) {
 
 // DAY 3: Given an array of integers as strings and SVGAnimatedNumberList, return the sum of the array values as if all were numbers.
 // Return your answer as a number. 
+
+function sumOfValues(arr) {
+    return arr.reduce((acc,c) => acc + c, 0)
+}
+
+console.log(sumsOfValues([1,2,3,'piece of text']))
