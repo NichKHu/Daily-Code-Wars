@@ -24,3 +24,9 @@ function sumOfValues(arr) {
 }
 
 console.log(sumsOfValues([1,2,3,'piece of text']))
+
+// DAY 4: Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+
+function digitize(n) {
+    return n.split().reverse
+  }
