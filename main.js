@@ -28,5 +28,13 @@ console.log(sumsOfValues([1,2,3,'piece of text']))
 // DAY 4: Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
 
 function digitize(n) {
-    return n.split().reverse
+    return n.split().reverse();
   }
+
+//DAY 5: Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+
+function digitize(n) {
+    return n.toString().split('').reverse().map(Number);
+  }
+
+  
