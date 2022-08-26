@@ -38,7 +38,7 @@ function digitize(n) {
   }
 
 //DAY 6: Timmy & Sarah think they are in love but they will only know once they pick a flower each. If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love. 
-//Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
+// Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
 
 function lovefunc(flower1, flower2){
     if(flower1 % 2 === 0 && flower2 % 2 != 0) {
@@ -49,3 +49,12 @@ function lovefunc(flower1, flower2){
       return false
     }
   }
+
+  //DAY 7: In this game, the hero moves from left to right. The player rolls the dice and moves the number of spaces indicated by the dice two times. 
+  // Create a function for the terminal game that takes the current position of the hero and the roll (1-6) and return the new position.
+
+  function move (position, roll) {
+    return Number((roll * 2) + position)
+  }
+  
+  
