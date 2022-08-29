@@ -69,3 +69,10 @@ function amIWilson(P) {
   return false 
  }
 }
+
+//Day 9: Write a function to split a string and convert it into an array of words.
+
+function stringToArray(string){
+  let stringConverted = string.toString()
+  return stringConverted.split(' ')
+}
