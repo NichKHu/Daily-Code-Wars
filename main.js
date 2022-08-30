@@ -70,9 +70,16 @@ function amIWilson(P) {
  }
 }
 
-//Day 9: Write a function to split a string and convert it into an array of words.
+//DAY 9: Write a function to split a string and convert it into an array of words.
 
 function stringToArray(string){
   let stringConverted = string.toString()
   return stringConverted.split(' ')
+}
+
+//DAY 10: Complete the function which converts a binary number (given as a string) to a decimal number.
+
+function binToDec(bin){
+  var finalDec = parseInt(bin, 2);
+  return finalDec
 }
