@@ -83,3 +83,13 @@ function binToDec(bin){
   var finalDec = parseInt(bin, 2);
   return finalDec
 }
+
+// DAY 11: Given a number n, return the number of positive odd numbers below n.
+
+function oddCount(n) {
+  let arrayRange = Array.from(new Array(n), (x, i) => i + 1);
+  let rangeMap = arrayRange.map(arrayRange % 2 !== 0) 
+  return rangeMap.length 
+}
+
+oddCount()
