@@ -93,3 +93,11 @@ function oddCount(n) {
 }
 
 oddCount()
+
+
+//DAY 12: Complete the solution so that it reverses all of the words within the string passed in.
+function reverseWords(str){
+  let reversedStr = str.split(' ').reverse().join(' ');
+  return reversedStr;
+}
+//Note: Instead of toString() method, the join() method ensures there's no commas.
