@@ -101,3 +101,9 @@ function reverseWords(str){
   return reversedStr;
 }
 //Note: Instead of toString() method, the join() method ensures there's no commas.
+
+//DAY 13: Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
+
+function multArray(num){
+  return num.reduce((a, b)=> a * b, 1);
+}
