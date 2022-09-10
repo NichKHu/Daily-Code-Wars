@@ -220,3 +220,10 @@ function discountRate(days) {
 function rentalCarCost(days) {
   return baseCost(days, 40) - discountRate(days);
 }
+
+//Day 22: Obtain sum of all elements in two arrays with integers only included in each arrays.
+
+
+function arrayPlusArray(arr1, arr2) {
+  return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
+}
