@@ -288,3 +288,5 @@ function getGrade (s1, s2, s3) {
 function rowSumOddNumbers(n) {
   return Math.pow(n, 3);
 }
+
+//Day 27: 
