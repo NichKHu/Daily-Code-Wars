@@ -304,4 +304,10 @@ function isTriangle(a,b,c)
     return statement
   }
   
-  
+//Day 29: Count the number of occurrences of each character and return it as a list of tuples in order of appearance. For empty output return an empty list.
+// Example:
+// orderedCount("abracadabra") == [['a', 5], ['b', 2], ['r', 2], ['c', 1], 
+
+  var orderedCount = function (text) {
+    return Array.from(new Set(text)).map(c => [c, text.match(new RegExp(c, 'g')).length]);
+  }
