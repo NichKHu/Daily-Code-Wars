@@ -311,3 +311,12 @@ function isTriangle(a,b,c)
   var orderedCount = function (text) {
     return Array.from(new Set(text)).map(c => [c, text.match(new RegExp(c, 'g')).length]);
   }
+
+//Day 30: Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+// For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+// Note: The function accepts an integer and returns an integer
+
+function squareDigits(num){
+  return Number(('' + num).split('').map(function (val) { return val * val;}).join(''));
+  
+}
