@@ -333,3 +333,11 @@ function sum() {
   },0);
     return sumArgument
 }
+
+//Day 32: Write a function which calculates the average of the numbers in a given list. Note: Empty arrays should return 0.
+
+function findAverage(array) {
+  let sumOfArray = array.reduce((acc, c) => acc + c, 0);
+  let solution = (sumOfArray/array.length);
+  return solution;
+}
