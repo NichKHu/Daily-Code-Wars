@@ -419,3 +419,22 @@ function squareArea(A){
   var area = Math.pow(radius, 2);
   return Math.round(area*100)/100
 }
+
+//Day 39: This program tests the life of an evaporator containing a gas.
+
+// We know the content of the evaporator (content in ml), the percentage of foam or gas lost every day (evap_per_day) and the threshold (threshold) in percentage beyond which the evaporator is no longer useful. All numbers are strictly positive.
+
+// The program reports the nth day (as an integer) on which the evaporator will be out of use.
+
+// Example:
+// evaporator(10, 10, 5) -> 29
+
+function evaporator(content, evap_per_day, threshold){ 
+  var days = 0;
+  var gas = 100;
+    while(gas >= threshold){
+      gas -= gas * evap_per_day / 100;
+      days++;
+  }
+    return days;
+  }
