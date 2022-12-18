@@ -723,6 +723,7 @@ The binary numbers from 1 to 16 are:
 1 1 0 1
 1 1 1 0
 1 1 1 1
+
 The numbers with a 1 in the 2's place are 2,3,6,7,10,11,14,and 15
 Other examples:
 solution(0,1) = []
