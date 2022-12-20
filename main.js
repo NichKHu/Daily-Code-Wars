@@ -744,3 +744,18 @@ if(number is odd) number = 3*number + 1
 Your task is to make a function hotpo that takes a positive n as input and returns the number of times you need to perform this algorithm to get n = 1.
 
 const hotpo = n => n === 1 ? 0 : 1 + hotpo(n % 2 ? (n * 3 + 1) : n / 2);
+
+//Day 55: Simple, given a string of words, return the length of the shortest word(s).
+
+String will never be empty and you do not need to account for different data types.
+
+function findShort(s){
+	var arr = s.split(' ');
+	var smallest = arr[0];
+	for (var i = 0; i < arr.length; i++) {
+		if(arr[i].length < smallest.length){
+			smallest = arr[i];
+		}
+	}
+	return smallest.length;
+}
