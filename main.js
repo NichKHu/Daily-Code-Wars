@@ -961,7 +961,7 @@ var flatten = function (lol){
   return [].concat.apply([],lol);
 }
 
-/Day 66: Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+//Day 66: Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
 
 invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
 invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
@@ -969,3 +969,23 @@ invert([]) == []
 You can assume that all values are integers. Do not mutate the input array/list.
 
 const invert = array => array.map(num => -num);
+
+//Day 67: Complete the function that counts the number of unique consonants in a string (made up of printable ascii characters).
+
+Consonants are letters used in English other than "a", "e", "i", "o", "u". We will count "y" as a consonant.
+
+Remember, your function needs to return the number of unique consonants - disregarding duplicates. For example, if the string passed into the function reads "add", the function should return 1 rather than 2, since "d" is a duplicate.
+
+Similarly, the function should also disregard duplicate consonants of differing cases. For example, "Dad" passed into the function should return 1 as "d" and "D" are duplicates.
+
+Examples
+"add" ==> 1
+"Dad" ==> 1
+"aeiou" ==> 0
+"sillystring" ==> 7
+"abcdefghijklmnopqrstuvwxyz" ==> 21
+"Count my unique consonants!!" ==> 7
+
+function countConsonants(str) {
+  return new Set(str.toLowerCase().replace(/[^a-z]|[aeiou]/g,"")).size
+}
